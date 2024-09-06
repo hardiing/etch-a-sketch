@@ -1,6 +1,10 @@
 let container = document.getElementById("container")
 let square
+let gridBtn = document.getElementById("gridBtn")
 
+gridBtn.addEventListener("click", () => {
+    prompt("howdy")
+})
 
 function createBoard() {
     for(let x = 0; x < 16; x++) {
@@ -8,11 +12,16 @@ function createBoard() {
             square = document.createElement("div")
             square.className = "tile"
             container.appendChild(square)
-            let number = document.createElement("p")
-            number.textContent = x
-            square.appendChild(number)
         }
     }
 }
 
 createBoard()
+
+let squaresArray = document.querySelectorAll(".tile")
+
+squaresArray.forEach(function (square) {
+    square.addEventListener("mouseover", function() {
+        square.classList.add("hover")
+    })
+})

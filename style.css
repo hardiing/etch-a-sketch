@@ -4,12 +4,26 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    width: 1600px;
-    height: 1600px;
+    width: 850px;
+    height: 850px;
+    margin: auto;
+}
+
+#header {
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tile {
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.hover {
+    background-color: black;
 }
